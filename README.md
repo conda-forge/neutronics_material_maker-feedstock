@@ -5,9 +5,13 @@ Home: https://github.com/ukaea/neutronics_material_maker
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neutronics_material_maker-feedstock/blob/master/LICENSE.txt)
 
 Summary: A tool for making parametric material cards for use in neutronics codes.
+
+Development: https://github.com/ukaea/neutronics_material_maker
+
+Documentation: neutronics-material-maker.readthedocs.io/
 
 The aim of this project is to facilitate the creation of materials
 for use in neutronics codes such as OpenMC, Serpent, MCNP and Fispact.
