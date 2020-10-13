@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - openmc
     - coolprop
+    - asteval
 
 test:
   imports:
