@@ -1,5 +1,5 @@
 {% set name = "neutronics_material_maker" %}
-{% set version = "0.1.16" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24231f055e386de03f53339057236a98c0881b265cd5a762f8af60a531acd223
+  sha256: 693fc24251c0b7e6ee9e6ef16274647efe3c53a41f5002a0f62ee90a31133160
 
 build:
   number: 0
