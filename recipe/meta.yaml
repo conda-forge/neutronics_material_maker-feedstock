@@ -10,7 +10,7 @@ source:
   sha256: c9e7de9ad1b89eb1e97dda2ec426bb55d1e9986cec80a2462f1113fa1f0fd2a8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,19 +27,24 @@ requirements:
 test:
   imports:
     - neutronics_material_maker
+  requires:
+    - pytest
+  source_files:
+    - tests/
+  commands:
+    - pytest -v tests
 
 about:
-  home: https://github.com/ukaea/neutronics_material_maker
+  home: https://github.com/fusion-energy/neutronics_material_maker
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
   summary: A tool for making parametric material cards for use in neutronics codes.
-
   description: |
     The aim of this project is to facilitate the creation of materials
     for use in neutronics codes such as OpenMC, Serpent, MCNP and Fispact.
   doc_url: neutronics-material-maker.readthedocs.io/
-  dev_url: https://github.com/ukaea/neutronics_material_maker
+  dev_url: https://github.com/fusion-energy/neutronics_material_maker
 
 extra:
   recipe-maintainers:

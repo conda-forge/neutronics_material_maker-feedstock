@@ -1,7 +1,7 @@
 About neutronics_material_maker
 ===============================
 
-Home: https://github.com/ukaea/neutronics_material_maker
+Home: https://github.com/fusion-energy/neutronics_material_maker
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neutronics_mate
 
 Summary: A tool for making parametric material cards for use in neutronics codes.
 
-Development: https://github.com/ukaea/neutronics_material_maker
+Development: https://github.com/fusion-energy/neutronics_material_maker
 
 Documentation: neutronics-material-maker.readthedocs.io/
 
