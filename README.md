@@ -1,11 +1,11 @@
-About neutronics_material_maker
-===============================
+About neutronics_material_maker-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neutronics_material_maker-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fusion-energy/neutronics_material_maker
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neutronics_material_maker-feedstock/blob/main/LICENSE.txt)
 
 Summary: A tool for making parametric material cards for use in neutronics codes.
 
