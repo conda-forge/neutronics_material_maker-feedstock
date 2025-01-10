@@ -6,20 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: fb498efc83b6ed0687aba42c93f7c87bdcc3351fc968a92d4ae6eb7c728a46e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - openmc
     - coolprop
     - asteval
@@ -29,6 +30,7 @@ test:
     - neutronics_material_maker
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests/
   commands:
